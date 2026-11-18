@@ -55,7 +55,7 @@ header.scrolled{border-color:var(--line);box-shadow:0 2px 12px rgba(22,36,58,.06
 .hero p{font-size:19px;max-width:620px;margin:0 auto 34px}
 .hero .ctas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
 .photo{width:100%;max-width:1080px;margin:56px auto 0;border-radius:12px;overflow:hidden;background:var(--blue-soft)}
-.photo img{display:block;width:100%;height:auto;aspect-ratio:21/9;object-fit:cover;transition:transform .8s ease}
+.photo img{display:block;width:100%;height:auto;aspect-ratio:21/9;object-fit:cover;object-position:center 40%;transition:transform .8s ease}
 .photo:hover img{transform:scale(1.02)}
 
 /* Marquee */
@@ -86,15 +86,6 @@ header.scrolled{border-color:var(--line);box-shadow:0 2px 12px rgba(22,36,58,.06
 .partner .ico{color:var(--blue);margin-bottom:16px;display:flex;justify-content:center}
 .partner b{display:block;font:700 19px Archivo,sans-serif;color:var(--ink);margin-bottom:4px}
 .partner span{color:var(--muted);font-size:15px}
-
-/* Careers */
-.jobs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px}
-.job{display:flex;justify-content:space-between;align-items:center;gap:16px;background:#fff;border:1px solid var(--line);border-radius:6px;padding:22px 26px;transition:border-color .2s}
-.job:hover{border-color:var(--blue)}
-.job h3{font-size:18px;margin-bottom:2px}
-.job small{color:var(--muted);font-size:14px}
-.job svg{flex:none;color:var(--blue);transition:transform .2s}
-.job:hover svg{transform:translateX(4px)}
 
 /* Contact */
 .contact{display:grid;grid-template-columns:1fr 1.1fr;gap:64px}
@@ -140,7 +131,6 @@ footer{background:var(--footer);padding:64px 0 28px;color:#b5c0cf;font-size:15px
   .photo img,.photo.wide img{aspect-ratio:4/3}
   .partners{grid-template-columns:repeat(2,1fr)}
   .services,.reasons{grid-template-columns:1fr 1fr}
-  .jobs{grid-template-columns:1fr}
   .foot{grid-template-columns:1fr 1fr}
   .foot>div:first-child{grid-column:1/-1}
 }
@@ -164,7 +154,6 @@ footer{background:var(--footer);padding:64px 0 28px;color:#b5c0cf;font-size:15px
     <ul id="menu">
       <li><a href="#leistungen">Leistungen</a></li>
       <li><a href="#ueber-uns">Über uns</a></li>
-      <li><a href="#karriere">Karriere</a></li>
       <li><a href="#kontakt">Kontakt</a></li>
     </ul>
     <a href="#kontakt" class="btn btn-primary">Jetzt anfragen</a>
@@ -183,7 +172,7 @@ footer{background:var(--footer);padding:64px 0 28px;color:#b5c0cf;font-size:15px
         <a href="#leistungen" class="btn btn-outline">Unsere Leistungen</a>
       </div>
     </div>
-    <figure class="photo reveal"><img src="https://images.unsplash.com/photo-1587813369290-091c9d432daf?w=2160&q=75&auto=format&fit=crop" width="1080" height="463" alt="Reihe weißer Transporter auf einem Betriebshof in Deutschland"></figure>
+    <figure class="photo reveal"><img src="https://images.unsplash.com/photo-1762095996527-126e49ef9d72?w=2160&q=75&auto=format&fit=crop" width="1080" height="463" alt="Lachender Fahrer im weißen Transporter"></figure>
   </div>
 </section>
 
@@ -216,7 +205,7 @@ footer{background:var(--footer);padding:64px 0 28px;color:#b5c0cf;font-size:15px
       <p>Velorion Logistics steht für moderne Zustelllogistik auf der letzten Meile. Wir verbinden ein eingespieltes Fahrerteam mit digitaler Tourenplanung und einer gepflegten Flotte. So entstehen Zustellungen, auf die sich Auftraggeber und Empfänger verlassen können.</p>
       <p>Unser Anspruch: klare Kommunikation, messbare Qualität und Partnerschaften, die über die nächste Saison hinaus halten.</p>
     </div>
-    <figure class="photo wide reveal"><img src="https://images.unsplash.com/photo-1558803116-b443d28fa878?w=2160&q=75&auto=format&fit=crop" width="1080" height="473" loading="lazy" alt="Zusteller belädt einen Transporter am Straßenrand"></figure>
+    <figure class="photo wide reveal"><img src="https://images.unsplash.com/photo-1758523670564-d1d6a734dc0b?w=2160&q=75&auto=format&fit=crop" width="1080" height="473" loading="lazy" alt="Zusteller übergibt ein Paket an der Haustür"></figure>
 
     <h2 class="reveal" style="margin-top:96px">Warum Velorion</h2>
     <div class="reasons">
@@ -243,20 +232,7 @@ footer{background:var(--footer);padding:64px 0 28px;color:#b5c0cf;font-size:15px
   </div>
 </section>
 
-<section class="alt" id="karriere">
-  <div class="wrap">
-    <h2 class="reveal">Karriere</h2>
-    <p class="lead reveal">Feste Anstellung, faire Bezahlung, moderne Fahrzeuge und ein Team, das zusammenhält. Bewirb dich direkt per E-Mail.</p>
-    <div class="jobs">
-      <a class="job reveal" href="mailto:kontakt@velorionlogistics.de?subject=Bewerbung%20Paketzusteller%20(m%2Fw%2Fd)"><div><h3>Paketzusteller (m/w/d)</h3><small>Vollzeit, Führerschein Klasse B</small></div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></a>
-      <a class="job reveal" href="mailto:kontakt@velorionlogistics.de?subject=Bewerbung%20Disponent%20(m%2Fw%2Fd)"><div><h3>Disponent (m/w/d)</h3><small>Vollzeit, Tourenplanung und Fahrersteuerung</small></div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></a>
-      <a class="job reveal" href="mailto:kontakt@velorionlogistics.de?subject=Bewerbung%20Kurierfahrer%20(m%2Fw%2Fd)"><div><h3>Kurierfahrer Express (m/w/d)</h3><small>Vollzeit oder Teilzeit, flexible Schichten</small></div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></a>
-      <a class="job reveal" href="mailto:kontakt@velorionlogistics.de?subject=Initiativbewerbung"><div><h3>Initiativbewerbung</h3><small>Quereinsteiger willkommen</small></div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></a>
-    </div>
-  </div>
-</section>
-
-<section id="kontakt">
+<section class="alt" id="kontakt">
   <div class="wrap contact">
     <div class="reveal">
       <h2>Kontakt</h2>
@@ -275,7 +251,6 @@ footer{background:var(--footer);padding:64px 0 28px;color:#b5c0cf;font-size:15px
         <select name="anliegen">
           <option>Partnerschaft oder Auftrag</option>
           <option>Kapazitätsanfrage</option>
-          <option>Bewerbung</option>
           <option>Sonstiges</option>
         </select>
       </label>
@@ -295,8 +270,7 @@ footer{background:var(--footer);padding:64px 0 28px;color:#b5c0cf;font-size:15px
         <p>Last-Mile-Logistik, Paketzustellung und KEP-Dienstleistungen. Schnell, planbar und zuverlässig.</p>
       </div>
       <div><h4>Navigation</h4><ul>
-        <li><a href="#leistungen">Leistungen</a></li><li><a href="#ueber-uns">Über uns</a></li>
-        <li><a href="#karriere">Karriere</a></li><li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="#leistungen">Leistungen</a></li><li><a href="#ueber-uns">Über uns</a></li><li><a href="#kontakt">Kontakt</a></li>
       </ul></div>
       <div><h4>Rechtliches</h4><ul>
         <li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li>
