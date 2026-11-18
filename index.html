@@ -25,8 +25,8 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tex
 a{color:inherit;text-decoration:none}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
 h1,h2,h3{font-family:Archivo,Inter,sans-serif;color:var(--ink);line-height:1.15;letter-spacing:-.01em}
-h2{font-size:clamp(28px,3.4vw,40px);font-weight:700;color:var(--blue);max-width:760px}
-.lead{font-size:18px;color:var(--text);max-width:640px;margin-top:16px}
+h2{font-size:clamp(28px,3.4vw,40px);font-weight:700;color:var(--blue);max-width:760px;margin:0 auto;text-align:center}
+.lead{font-size:18px;color:var(--text);max-width:640px;margin:16px auto 0;text-align:center}
 section{padding:96px 0;scroll-margin-top:78px}
 .alt{background:var(--bg-alt)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 28px;border-radius:4px;font-weight:600;font-size:15px;transition:background .2s,color .2s,border-color .2s;cursor:pointer;border:2px solid transparent;font-family:inherit}
@@ -50,12 +50,13 @@ header.scrolled{border-color:var(--line);box-shadow:0 2px 12px rgba(22,36,58,.06
 .menu-btn{display:none;background:none;border:0;cursor:pointer;width:40px;height:40px;color:var(--ink)}
 
 /* Hero */
-.hero{padding:72px 0 88px}
-.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:64px;align-items:center}
-.hero h1{font-size:clamp(36px,5vw,58px);font-weight:700;color:var(--blue);margin-bottom:22px}
-.hero p{font-size:18px;max-width:520px;margin-bottom:34px}
-.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
-.hero-photo{width:100%;height:auto;max-width:420px;justify-self:end;aspect-ratio:4/5;object-fit:cover;display:block;border-radius:8px;background:var(--blue-soft)}
+.hero{padding:80px 0 96px;text-align:center}
+.hero h1{font-size:clamp(36px,5.4vw,64px);font-weight:700;color:var(--blue);max-width:900px;margin:0 auto 22px}
+.hero p{font-size:19px;max-width:620px;margin:0 auto 34px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+.photo{width:100%;max-width:1080px;margin:56px auto 0;border-radius:12px;overflow:hidden;background:var(--blue-soft)}
+.photo img{display:block;width:100%;height:auto;aspect-ratio:21/9;object-fit:cover;transition:transform .8s ease}
+.photo:hover img{transform:scale(1.02)}
 
 /* Marquee */
 .marquee{background:var(--blue);overflow:hidden;padding:16px 0}
@@ -64,26 +65,25 @@ header.scrolled{border-color:var(--line);box-shadow:0 2px 12px rgba(22,36,58,.06
 
 /* Services */
 .services{display:grid;grid-template-columns:repeat(3,1fr);gap:48px 40px;margin-top:56px}
-.service .ico{color:var(--blue);margin-bottom:18px}
+.service{text-align:center}
+.service .ico{color:var(--blue);margin-bottom:18px;display:flex;justify-content:center}
 .service h3{font-size:21px;margin-bottom:8px}
 .service p{color:var(--text)}
 
 /* About */
-.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center}
-.about-visual{width:100%;max-width:380px;margin:0;border-radius:8px;overflow:hidden;background:var(--blue-soft)}
-.about-visual img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;transition:transform .6s ease}
-.about-visual:hover img{transform:scale(1.03)}
+.about{max-width:760px;margin:0 auto;text-align:center}
 .about p{margin-top:18px;font-size:17px}
+.photo.wide img{aspect-ratio:16/7}
 .reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
-.reason{background:#fff;border:1px solid var(--line);border-radius:6px;padding:26px 24px;transition:border-color .2s,transform .2s}
+.reason{text-align:center;background:#fff;border:1px solid var(--line);border-radius:6px;padding:26px 24px;transition:border-color .2s,transform .2s}
 .reason:hover{border-color:var(--blue);transform:translateY(-3px)}
 .reason h3{font-size:18px;margin-bottom:6px}
 .reason p{font-size:15px;color:var(--muted)}
 
 /* Clients */
 .partners{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px}
-.partner{border:1px solid var(--line);border-radius:6px;padding:28px 24px;background:#fff}
-.partner .ico{color:var(--blue);margin-bottom:16px}
+.partner{text-align:center;border:1px solid var(--line);border-radius:6px;padding:28px 24px;background:#fff}
+.partner .ico{color:var(--blue);margin-bottom:16px;display:flex;justify-content:center}
 .partner b{display:block;font:700 19px Archivo,sans-serif;color:var(--ink);margin-bottom:4px}
 .partner span{color:var(--muted);font-size:15px}
 
@@ -98,6 +98,7 @@ header.scrolled{border-color:var(--line);box-shadow:0 2px 12px rgba(22,36,58,.06
 
 /* Contact */
 .contact{display:grid;grid-template-columns:1fr 1.1fr;gap:64px}
+.contact h2,.contact .lead{text-align:left;margin-left:0}
 .contact-info{margin-top:32px;display:grid;gap:18px}
 .contact-info>div{display:flex;gap:14px;align-items:flex-start}
 .contact-info svg{flex:none;color:var(--blue);margin-top:3px}
@@ -135,8 +136,8 @@ footer{background:var(--footer);padding:64px 0 28px;color:#b5c0cf;font-size:15px
   .nav ul li a{display:block;padding:12px 0;border:0}
   .menu-btn{display:grid;place-items:center}
   .nav .btn{display:none}
-  .hero-grid,.about,.contact{grid-template-columns:1fr;gap:40px}
-  .hero-photo{justify-self:start;aspect-ratio:4/3}
+  .contact{grid-template-columns:1fr;gap:40px}
+  .photo img,.photo.wide img{aspect-ratio:4/3}
   .partners{grid-template-columns:repeat(2,1fr)}
   .services,.reasons{grid-template-columns:1fr 1fr}
   .jobs{grid-template-columns:1fr}
@@ -174,17 +175,15 @@ footer{background:var(--footer);padding:64px 0 28px;color:#b5c0cf;font-size:15px
 <main>
 <section class="hero">
   <div class="wrap">
-    <div class="hero-grid">
-      <div class="reveal">
-        <h1>Ihre Pakete. Unser Versprechen.</h1>
-        <p>Velorion Logistics stellt Pakete sicher vom Depot bis zur Haustür zu. Mit geschulten Fahrern, gepflegter Flotte und digitaler Tourenplanung für KEP-Dienstleister und Händler.</p>
-        <div class="ctas">
-          <a href="#kontakt" class="btn btn-primary">Jetzt anfragen</a>
-          <a href="#leistungen" class="btn btn-outline">Unsere Leistungen</a>
-        </div>
+    <div class="reveal">
+      <h1>Ihre Pakete. Unser Versprechen.</h1>
+      <p>Velorion Logistics stellt Pakete sicher vom Depot bis zur Haustür zu. Mit geschulten Fahrern, gepflegter Flotte und digitaler Tourenplanung für KEP-Dienstleister und Händler.</p>
+      <div class="ctas">
+        <a href="#kontakt" class="btn btn-primary">Jetzt anfragen</a>
+        <a href="#leistungen" class="btn btn-outline">Unsere Leistungen</a>
       </div>
-      <img class="hero-photo reveal" src="https://images.unsplash.com/photo-1620455800201-7f00aeef12ed?w=840&q=75&auto=format&fit=crop" width="420" height="525" alt="Zusteller belädt einen Transporter mit Paketen">
     </div>
+    <figure class="photo reveal"><img src="https://images.unsplash.com/photo-1587813369290-091c9d432daf?w=2160&q=75&auto=format&fit=crop" width="1080" height="463" alt="Reihe weißer Transporter auf einem Betriebshof in Deutschland"></figure>
   </div>
 </section>
 
@@ -212,14 +211,12 @@ footer{background:var(--footer);padding:64px 0 28px;color:#b5c0cf;font-size:15px
 
 <section class="alt" id="ueber-uns">
   <div class="wrap">
-    <div class="about">
-      <figure class="about-visual reveal"><img src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=760&q=75&auto=format&fit=crop" width="380" height="475" loading="lazy" alt="Übergabe eines Pakets an der Haustür"></figure>
-      <div class="reveal">
-        <h2>Über uns</h2>
-        <p>Velorion Logistics steht für moderne Zustelllogistik auf der letzten Meile. Wir verbinden ein eingespieltes Fahrerteam mit digitaler Tourenplanung und einer gepflegten Flotte. So entstehen Zustellungen, auf die sich Auftraggeber und Empfänger verlassen können.</p>
-        <p>Unser Anspruch: klare Kommunikation, messbare Qualität und Partnerschaften, die über die nächste Saison hinaus halten.</p>
-      </div>
+    <div class="about reveal">
+      <h2>Über uns</h2>
+      <p>Velorion Logistics steht für moderne Zustelllogistik auf der letzten Meile. Wir verbinden ein eingespieltes Fahrerteam mit digitaler Tourenplanung und einer gepflegten Flotte. So entstehen Zustellungen, auf die sich Auftraggeber und Empfänger verlassen können.</p>
+      <p>Unser Anspruch: klare Kommunikation, messbare Qualität und Partnerschaften, die über die nächste Saison hinaus halten.</p>
     </div>
+    <figure class="photo wide reveal"><img src="https://images.unsplash.com/photo-1558803116-b443d28fa878?w=2160&q=75&auto=format&fit=crop" width="1080" height="473" loading="lazy" alt="Zusteller belädt einen Transporter am Straßenrand"></figure>
 
     <h2 class="reveal" style="margin-top:96px">Warum Velorion</h2>
     <div class="reasons">
