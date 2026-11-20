@@ -1,9 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 56" role="img" aria-label="Velorion Logistics">
-<g transform="translate(0 4)"><path d="M24 1L45 12.5L24 24L3 12.5Z" fill="#3a7bd5"/>
-<path d="M3 12.5L24 24V47L3 35.5Z" fill="#0b2545"/>
-<path d="M45 12.5L24 24V47L45 35.5Z" fill="#0b3d7a"/>
-<path d="M9.5 22L24 37.5L38.5 22" fill="none" stroke="#ffffff" stroke-width="5"/></g>
-<g transform="translate(66 6) scale(.7)" fill="#0b2545"><g transform="skewX(-12)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 58" role="img" aria-label="Velorion Logistics">
+<g transform="translate(0.75 2) scale(.9)" fill="#0b2545">
 <path d="M0 0H9.5L17 27L24.5 0H34L22 40H12Z"/>
 <path d="M40 0H64V8H48.5V16H61V24H48.5V32H64V40H40Z"/>
 <path d="M70 0H78.5V32H92V40H70Z"/>
@@ -12,6 +8,8 @@
 <path d="M177 0H185.5V40H177Z"/>
 <path fill-rule="evenodd" d="M203 0H215Q227 0 227 12V28Q227 40 215 40H203Q191 40 191 28V12Q191 0 203 0ZM204.5 8Q199.5 8 199.5 13V27Q199.5 32 204.5 32H213.5Q218.5 32 218.5 27V13Q218.5 8 213.5 8Z"/>
 <path d="M233 0H241L257 25V0H265V40H257L241 15V40H233Z"/>
-</g></g>
-<text x="60" y="54" textLength="185.5" lengthAdjust="spacing" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="11" fill="#0b3d7a">LOGISTICS</text>
+</g>
+<rect x="0.75" y="46" width="124" height="4" fill="#2f72d0"/>
+<path d="M124.75 41.5L136 48L124.75 54.5Z" fill="#2f72d0"/>
+<text x="144" y="52.2" textLength="95.25" lengthAdjust="spacing" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="11.5" fill="#0b3d7a">LOGISTICS</text>
 </svg>
