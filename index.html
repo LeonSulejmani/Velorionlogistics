@@ -8,7 +8,7 @@
 <meta property="og:title" content="Velorion Logistics | Paketzustellung und Last-Mile-Logistik">
 <meta property="og:description" content="Servicepartner für Paketzustellung auf der letzten Meile.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230b3d7a'/%3E%3Cpath d='M8 9l8 15 8-15' fill='none' stroke='%23fff' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="logo-zeichen.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
@@ -50,10 +50,8 @@ section{padding:88px 0;scroll-margin-top:72px}
 /* Header */
 header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
-.logo{display:flex;align-items:center;gap:10px}
-.logo-mark{width:34px;height:34px;border-radius:3px;background:var(--blue);display:grid;place-items:center}
-.logo-text b{display:block;font-weight:700;font-size:20px;line-height:1;color:var(--ink);letter-spacing:.06em}
-.logo-text small{display:block;font-size:10px;line-height:1;color:var(--muted);letter-spacing:.32em;margin-top:4px}
+.logo{display:flex;align-items:center}
+.logo img{height:44px;width:auto}
 .menu{display:flex;gap:36px;list-style:none;font-size:16px;font-weight:600;color:var(--ink)}
 .menu a{display:block;padding:24px 0;border-bottom:3px solid transparent}
 .menu a:hover{color:var(--blue);border-color:var(--blue)}
@@ -120,6 +118,7 @@ header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid 
 .contact-info div{padding:18px 0;border-bottom:1px solid var(--line)}
 .contact-info small{display:block;font-size:14px;color:var(--muted)}
 .contact-info a,.contact-info p{font-weight:600;color:var(--ink)}
+.contact-info a:hover{color:var(--blue)}
 form{background:#fff;border:1px solid var(--line);padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
 label{display:grid;gap:6px;font-size:15px;font-weight:600;color:var(--ink)}
 label.full{grid-column:1/-1}
@@ -132,10 +131,7 @@ form .hint{grid-column:1/-1;color:var(--muted);font-size:14px}
 /* Footer */
 footer{background:var(--navy);color:#b9c4d1;font-size:15px}
 .foot{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;padding-top:64px;padding-bottom:48px}
-.foot .logo-text b{color:#fff}
-.foot .logo-text small{color:#9fb0c4}
-.foot .logo-mark{background:#fff}
-.foot .logo-mark path{stroke:var(--navy)}
+.foot .logo img{height:46px}
 .foot p{margin-top:16px;max-width:320px}
 .foot h4{color:#fff;font-size:15px;margin-bottom:14px}
 .foot ul{list-style:none;display:grid;gap:9px}
@@ -183,16 +179,13 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
 <div class="topbar">
   <div class="wrap">
     <span>Servicepartner für Paketzustellung in Deutschland</span>
-    <nav><a href="#kontakt">Kontakt</a><a href="mailto:kontakt@velorionlogistics.de">kontakt@velorionlogistics.de</a></nav>
+    <nav><a href="tel:+4915753461169">0157 53461169</a><a href="mailto:kontakt@velorionlogistics.de">kontakt@velorionlogistics.de</a></nav>
   </div>
 </div>
 
 <header>
   <div class="wrap nav">
-    <a href="#" class="logo" aria-label="Velorion Logistics Startseite">
-      <span class="logo-mark"><svg width="20" height="20" viewBox="0 0 32 32"><path d="M8 9l8 15 8-15" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-      <span class="logo-text"><b>VELORION</b><small>LOGISTICS</small></span>
-    </a>
+    <a href="#" class="logo" aria-label="Velorion Logistics Startseite"><img src="logo.svg" alt="Velorion Logistics" width="198" height="44"></a>
     <ul class="menu" id="menu">
       <li><a href="#leistungen">Leistungen</a></li>
       <li><a href="#unternehmen">Unternehmen</a></li>
@@ -295,8 +288,9 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
       <h2>Kontakt</h2>
       <p class="intro">Neue Region, zusätzliche Kapazität oder feste Partnerschaft: Schreiben Sie uns. In der Regel melden wir uns innerhalb von 24 Stunden.</p>
       <div class="contact-info">
+        <div><small>Telefon</small><a href="tel:+4915753461169">0157 53461169</a></div>
         <div><small>E-Mail</small><a href="mailto:kontakt@velorionlogistics.de">kontakt@velorionlogistics.de</a></div>
-        <div><small>Unternehmen</small><p>Velorion Logistics, Deutschland</p></div>
+        <div><small>Anschrift</small><p>Velorion Logistics, Inhaber Leon Sulejmani<br>Harry-S.-Truman-Allee 8, 14167 Berlin</p></div>
       </div>
     </div>
     <form id="contact-form" class="reveal">
@@ -322,8 +316,8 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
 <footer>
   <div class="wrap foot">
     <div>
-      <a href="#" class="logo"><span class="logo-mark"><svg width="20" height="20" viewBox="0 0 32 32"><path d="M8 9l8 15 8-15" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="logo-text"><b>VELORION</b><small>LOGISTICS</small></span></a>
-      <p>Servicepartner für Paketzustellung und Last-Mile-Logistik in Deutschland.</p>
+      <a href="#" class="logo"><img src="logo-weiss.svg" alt="Velorion Logistics" width="207" height="46"></a>
+      <p>Servicepartner für Paketzustellung und Last-Mile-Logistik. Sitz in Berlin.</p>
     </div>
     <div><h4>Leistungen</h4><ul>
       <li><a href="#leistungen">Last-Mile-Zustellung</a></li>
@@ -336,8 +330,9 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
       <li><a href="#kontakt">Kontakt</a></li>
     </ul></div>
     <div><h4>Kontakt</h4><ul>
+      <li>Harry-S.-Truman-Allee 8<br>14167 Berlin</li>
+      <li><a href="tel:+4915753461169">0157 53461169</a></li>
       <li><a href="mailto:kontakt@velorionlogistics.de">kontakt@velorionlogistics.de</a></li>
-      <li><a href="#kontakt">Angebot anfragen</a></li>
     </ul></div>
   </div>
   <div class="legal">
