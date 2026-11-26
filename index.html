@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Velorion Logistics | Paketzustellung, Last-Mile-Logistik und Spedition</title>
-<meta name="description" content="Velorion Logistics ist Servicepartner für Paketzustellung auf der letzten Meile und Spedition. Zuverlässige Touren, feste Ansprechpartner und flexible Kapazitäten für KEP-Dienstleister, Händler und Geschäftskunden.">
-<meta property="og:title" content="Velorion Logistics | Paketzustellung, Last-Mile-Logistik und Spedition">
-<meta property="og:description" content="Servicepartner für Paketzustellung auf der letzten Meile und Spedition.">
+<title>Velorion Logistics | Logistik für Paketzustellung und Spedition</title>
+<meta name="description" content="Velorion Logistics ist Ihr Logistikpartner aus Berlin für Paketzustellung und Spedition. Last-Mile, KEP- und Expressfahrten sowie Teil- und Komplettladungen im Nah- und Fernverkehr.">
+<meta property="og:title" content="Velorion Logistics | Logistik für Paketzustellung und Spedition">
+<meta property="og:description" content="Ihr Logistikpartner für Paketzustellung und Spedition.">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/svg+xml" href="logo-zeichen.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,9 +27,9 @@ img{display:block;max-width:100%}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
 h1,h2,h3{color:var(--ink);font-weight:700;line-height:1.2}
 h2{font-size:clamp(28px,3vw,36px)}
-h3{font-size:20px}
+h3{font-size:24px}
 .intro{max-width:680px;margin-top:12px;font-size:18px;color:var(--text)}
-section{padding:88px 0;scroll-margin-top:72px}
+section{padding:80px 0;scroll-margin-top:72px}
 .alt{background:var(--bg-alt)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 26px;border-radius:3px;font-weight:600;font-size:16px;border:2px solid transparent;cursor:pointer;font-family:inherit;transition:background .15s,color .15s,border-color .15s}
 .btn-primary{background:var(--blue);color:#fff}
@@ -38,8 +38,6 @@ section{padding:88px 0;scroll-margin-top:72px}
 .btn-light:hover{background:var(--blue-soft)}
 .btn-ghost{border-color:#fff;color:#fff}
 .btn-ghost:hover{background:#fff;color:var(--blue)}
-.link{display:inline-flex;align-items:center;gap:6px;font-weight:600;color:var(--blue)}
-.link:hover{text-decoration:underline}
 
 /* Top bar */
 .topbar{background:var(--navy);color:#c9d3df;font-size:14px}
@@ -58,11 +56,11 @@ header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid 
 .menu-btn{display:none;background:none;border:0;cursor:pointer;width:40px;height:40px;color:var(--ink)}
 
 /* Hero */
-.hero{position:relative;min-height:540px;display:flex;align-items:center;color:#fff;background:var(--navy);padding:0}
+.hero{position:relative;min-height:520px;display:flex;align-items:center;color:#fff;background:var(--navy);padding:0}
 .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;transform:scaleX(-1)}
-.hero::after{content:"";position:absolute;inset:0;background:rgba(8,26,50,.58)}
+.hero::after{content:"";position:absolute;inset:0;background:rgba(8,26,50,.6)}
 .hero .wrap{position:relative;z-index:1;width:100%}
-.hero-box{max-width:620px;padding:64px 0}
+.hero-box{max-width:640px;padding:64px 0}
 .hero h1{color:#fff;font-size:clamp(36px,4.6vw,56px);margin-bottom:18px}
 .hero p{font-size:20px;color:#e6ecf3;margin-bottom:32px}
 .hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
@@ -77,18 +75,17 @@ header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid 
 .value span{color:var(--muted);font-size:15px}
 
 /* Services */
-.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:44px}
-@media (max-width:1180px){.cards{grid-template-columns:repeat(2,1fr)}}
-.card{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column}
-.card figure{overflow:hidden;background:var(--blue-soft)}
-.card img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;transition:transform .5s ease}
-.card:hover img{transform:scale(1.03)}
-.card-body{padding:26px 26px 28px;display:flex;flex-direction:column;gap:10px;flex:1}
-.card-body p{flex:1}
-.more{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:28px}
-.more div{border-top:3px solid var(--blue);padding-top:18px}
-.more h3{font-size:18px;margin-bottom:6px}
-.more p{font-size:16px;color:var(--muted)}
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px}
+.pillar{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;scroll-margin-top:96px}
+.pillar figure{overflow:hidden;background:var(--blue-soft)}
+.pillar img{width:100%;height:auto;aspect-ratio:16/8;object-fit:cover;transition:transform .5s ease}
+.pillar:hover img{transform:scale(1.03)}
+.pillar-body{padding:30px 32px 32px;display:flex;flex-direction:column;gap:16px;flex:1}
+.pillar ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 20px}
+.pillar li{display:flex;gap:10px;font-size:16px;color:var(--ink)}
+.pillar li svg{flex:none;color:var(--blue);margin-top:4px}
+.pillar .for{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);font-size:15px;color:var(--muted)}
+.pillar .btn{align-self:flex-start}
 
 /* Company */
 .company{display:grid;grid-template-columns:1.1fr .9fr;gap:72px;align-items:start}
@@ -99,19 +96,12 @@ header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid 
 .checks b{display:block;color:var(--ink)}
 .checks span{font-size:16px;color:var(--muted)}
 
-/* Clients */
-.clients{display:grid;grid-template-columns:repeat(4,1fr);margin-top:44px;border:1px solid var(--line);background:#fff}
-.client{padding:30px 26px}
-.client + .client{border-left:1px solid var(--line)}
-.client svg{color:var(--blue);margin-bottom:14px}
-.client h3{font-size:18px;margin-bottom:4px}
-.client p{font-size:16px;color:var(--muted)}
-
 /* CTA band */
-.cta{background:var(--blue);color:#fff;padding:56px 0}
+.cta{background:var(--blue);color:#fff;padding:52px 0}
 .cta .wrap{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
 .cta h2{color:#fff;font-size:clamp(24px,2.6vw,30px)}
 .cta p{color:#dbe6f3;margin-top:6px}
+.cta .ctas{display:flex;gap:14px;flex-wrap:wrap}
 
 /* Contact */
 .contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px}
@@ -147,6 +137,9 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 
 /* Responsive */
+@media (max-width:1100px){
+  .pillar ul{grid-template-columns:1fr}
+}
 @media (max-width:980px){
   .topbar{display:none}
   .menu{display:none;position:absolute;top:72px;left:0;right:0;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid var(--line);padding:4px 32px 12px}
@@ -154,23 +147,19 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
   .menu a{padding:14px 0;border-bottom:1px solid var(--line)}
   .menu-btn{display:grid;place-items:center}
   .nav .btn{display:none}
-  .values .wrap,.cards,.more{grid-template-columns:1fr}
+  .values .wrap,.pillars{grid-template-columns:1fr}
   .value,.value + .value{padding:20px 0;border-left:0}
   .value + .value{border-top:1px solid var(--line)}
   .company,.contact{grid-template-columns:1fr;gap:40px}
-  .clients{grid-template-columns:1fr 1fr}
-  .client:nth-child(3){border-left:0}
-  .client:nth-child(n+3){border-top:1px solid var(--line)}
   .foot{grid-template-columns:1fr 1fr}
   .foot>div:first-child{grid-column:1/-1}
 }
 @media (max-width:600px){
   .wrap{padding:0 16px}
-  section{padding:64px 0}
+  section{padding:60px 0}
   .hero{min-height:480px}
   .hero p{font-size:18px}
-  .clients{grid-template-columns:1fr}
-  .client + .client{border-left:0;border-top:1px solid var(--line)}
+  .pillar-body{padding:24px 20px 26px}
   form{grid-template-columns:1fr;padding:22px}
 }
 </style>
@@ -179,7 +168,7 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
 
 <div class="topbar">
   <div class="wrap">
-    <span>Paketzustellung und Spedition in Deutschland</span>
+    <span>Logistikpartner für Paketzustellung und Spedition</span>
     <nav><a href="tel:+4915753461169">0157 53461169</a><a href="mailto:kontakt@velorionlogistics.de">kontakt@velorionlogistics.de</a></nav>
   </div>
 </div>
@@ -188,9 +177,9 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
   <div class="wrap nav">
     <a href="#" class="logo" aria-label="Velorion Logistics Startseite"><img src="logo.svg" alt="Velorion Logistics" width="198" height="44"></a>
     <ul class="menu" id="menu">
-      <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="#paket">Paketlogistik</a></li>
+      <li><a href="#spedition">Spedition</a></li>
       <li><a href="#unternehmen">Unternehmen</a></li>
-      <li><a href="#auftraggeber">Auftraggeber</a></li>
       <li><a href="#kontakt">Kontakt</a></li>
     </ul>
     <a href="#kontakt" class="btn btn-primary">Angebot anfragen</a>
@@ -203,11 +192,11 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
   <img src="https://images.pexels.com/photos/6721914/pexels-photo-6721914.jpeg?auto=compress&cs=tinysrgb&w=2400" alt="Kundin unterschreibt auf dem Zustellgerät des Zustellers" width="2400" height="1602">
   <div class="wrap">
     <div class="hero-box">
-      <h1>Ihre Pakete. Unser Versprechen.</h1>
-      <p>Wir übernehmen die Zustellung auf der letzten Meile und Speditionsaufträge für KEP-Dienstleister, Händler und Geschäftskunden. Zuverlässig, planbar und mit festen Ansprechpartnern.</p>
+      <h1>Ihre Sendung. Unser Versprechen.</h1>
+      <p>Velorion Logistics ist Ihr Logistikpartner für Paketzustellung und Spedition. Vom Paket an der Haustür bis zur Komplettladung: zuverlässig, planbar und mit festen Ansprechpartnern.</p>
       <div class="ctas">
-        <a href="#kontakt" class="btn btn-light">Angebot anfragen</a>
-        <a href="#leistungen" class="btn btn-ghost">Leistungen ansehen</a>
+        <a href="#paket" class="btn btn-light">Paketlogistik</a>
+        <a href="#spedition" class="btn btn-ghost">Spedition</a>
       </div>
     </div>
   </div>
@@ -215,38 +204,47 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
 
 <div class="values">
   <div class="wrap">
-    <div class="value"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><div><b>Feste Ansprechpartner</b><span>Ein Disponent für Ihre Touren</span></div></div>
-    <div class="value"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><div><b>Lückenlose Dokumentation</b><span>Scan und Zustellnachweis je Sendung</span></div></div>
-    <div class="value"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><div><b>Skalierbare Kapazitäten</b><span>Zusätzliche Touren in Spitzenzeiten</span></div></div>
+    <div class="value"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><div><b>Feste Ansprechpartner</b><span>Ein Disponent für alle Ihre Aufträge</span></div></div>
+    <div class="value"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><div><b>Lückenlose Dokumentation</b><span>Nachweis für jede Sendung und Ladung</span></div></div>
+    <div class="value"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><div><b>Flexible Kapazitäten</b><span>Zusätzliche Fahrzeuge bei Bedarf</span></div></div>
   </div>
 </div>
 
 <section id="leistungen">
   <div class="wrap">
-    <h2 class="reveal">Leistungen</h2>
-    <p class="intro reveal">Von der Übernahme im Depot bis zur Übergabe an der Haustür: Wir stellen Fahrer, Fahrzeuge und Organisation für Ihre Zustelltouren und Transporte.</p>
-    <div class="cards">
-      <article class="card reveal">
-        <figure><img src="https://images.pexels.com/photos/6721907/pexels-photo-6721907.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Kundin bestätigt die Zustellung auf dem Zustellgerät" width="900" height="563" loading="lazy"></figure>
-        <div class="card-body"><h3>Last-Mile-Zustellung</h3><p>Zustellung von B2C- und B2B-Sendungen auf festen Touren, mit Scan-Dokumentation und Zustellnachweis.</p><a href="#kontakt" class="link">Mehr erfahren <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></a></div>
+    <h2 class="reveal">Unsere Leistungen</h2>
+    <p class="intro reveal">Zwei Schwerpunkte, ein Partner: Wir übernehmen Aufträge in der Paketlogistik und in der Spedition.</p>
+    <div class="pillars">
+      <article class="pillar reveal" id="paket">
+        <figure><img src="https://images.pexels.com/photos/6169129/pexels-photo-6169129.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Fahrer im Transporter mit Navigation und Paketen" width="1200" height="600" loading="lazy"></figure>
+        <div class="pillar-body">
+          <h3>Paketlogistik</h3>
+          <p>Zustellung auf der letzten Meile sowie Kurier-, Express- und Paketfahrten, als Servicepartner im Depot oder direkt für Ihr Unternehmen.</p>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Last-Mile-Zustellung</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>KEP- und Expressfahrten</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Scan und Zustellnachweis</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Zusatztouren in Spitzenzeiten</li>
+          </ul>
+          <p class="for">Für KEP-Dienstleister, Online-Händler und Großhandel</p>
+          <a href="#kontakt" class="btn btn-primary" data-anliegen="Paketlogistik">Paketauftrag anfragen</a>
+        </div>
       </article>
-      <article class="card reveal">
-        <figure><img src="https://images.pexels.com/photos/6169129/pexels-photo-6169129.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Fahrer im Transporter mit Navigation und Paketen" width="900" height="563" loading="lazy"></figure>
-        <div class="card-body"><h3>KEP- und Expressdienste</h3><p>Kurier-, Express- und Paketfahrten als Servicepartner im Depot oder als Direktfahrten für Ihr Unternehmen.</p><a href="#kontakt" class="link">Mehr erfahren <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></a></div>
+      <article class="pillar reveal" id="spedition">
+        <figure><img src="https://images.pexels.com/photos/41158056/pexels-photo-41158056.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Sattelzug mit Auflieger auf der Straße" width="1200" height="600" loading="lazy"></figure>
+        <div class="pillar-body">
+          <h3>Spedition</h3>
+          <p>Planung und Durchführung von Transporten im Nah- und Fernverkehr, zuverlässig von der Abholung bis zur Anlieferung.</p>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Teil- und Komplettladungen</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Nah- und Fernverkehr</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Palettenware und Stückgut</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Direktfahrten und feste Routen</li>
+          </ul>
+          <p class="for">Für Industrie, Handel und Verlader</p>
+          <a href="#kontakt" class="btn btn-primary" data-anliegen="Spedition">Speditionsauftrag anfragen</a>
+        </div>
       </article>
-      <article class="card reveal">
-        <figure><img src="https://images.pexels.com/photos/2804929/pexels-photo-2804929.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Logistikzentrum mit Lkw an den Laderampen aus der Luft" width="900" height="563" loading="lazy"></figure>
-        <div class="card-body"><h3>Flexible Kapazitäten</h3><p>Zusätzliche Fahrer und Fahrzeuge für Saisonspitzen, Aktionstage und neue Zustellgebiete.</p><a href="#kontakt" class="link">Mehr erfahren <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></a></div>
-      </article>
-      <article class="card reveal">
-        <figure><img src="https://images.pexels.com/photos/41158056/pexels-photo-41158056.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Sattelzug mit Auflieger auf der Straße" width="900" height="563" loading="lazy"></figure>
-        <div class="card-body"><h3>Spedition</h3><p>Planung und Durchführung von Transporten im Nah- und Fernverkehr, als Teil- oder Komplettladung.</p><a href="#kontakt" class="link">Mehr erfahren <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></a></div>
-      </article>
-    </div>
-    <div class="more">
-      <div class="reveal"><h3>Tourenplanung</h3><p>Digitale Routenplanung für mehr Stopps pro Stunde und weniger Leerkilometer.</p></div>
-      <div class="reveal"><h3>Fuhrparkmanagement</h3><p>Wartung, Telematik und Ersatzfahrzeuge, damit jede Tour pünktlich startet.</p></div>
-      <div class="reveal"><h3>Qualitätsberichte</h3><p>Regelmäßige Auswertung von Zustellquote und Rückläufern für Ihre Steuerung.</p></div>
     </div>
   </div>
 </section>
@@ -255,34 +253,21 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
   <div class="wrap company">
     <div class="reveal">
       <h2>Unternehmen</h2>
-      <p>Velorion Logistics ist Servicepartner für die Paketzustellung auf der letzten Meile und für Speditionsaufträge. Wir verbinden ein eingespieltes Fahrerteam mit digitaler Tourenplanung und einer gepflegten Fahrzeugflotte.</p>
+      <p>Velorion Logistics ist ein Logistikunternehmen aus Berlin mit zwei Schwerpunkten: Paketzustellung und Spedition. Wir verbinden ein eingespieltes Fahrerteam mit digitaler Disposition und gepflegten Fahrzeugen.</p>
       <p>Für unsere Auftraggeber bedeutet das planbare Abläufe, transparente Qualität und einen Partner, der auch in Spitzenzeiten verlässlich liefert.</p>
     </div>
     <ul class="checks reveal">
-      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><div><b>Geschulte, fest angestellte Fahrer</b><span>Eingearbeitet auf Tour, Scanner und Kundenkontakt</span></div></li>
-      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><div><b>Gewartete Fahrzeugflotte</b><span>Ersatzfahrzeuge bei Ausfall kurzfristig verfügbar</span></div></li>
-      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><div><b>Elektro-Transporter</b><span>Emissionsarme Zustellung in Innenstädten</span></div></li>
-      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><div><b>Klare Kommunikation</b><span>Ein fester Disponent als Ansprechpartner</span></div></li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><div><b>Geschulte, erfahrene Fahrer</b><span>Sicher in Zustellung, Transport und Kundenkontakt</span></div></li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><div><b>Gewartete Fahrzeuge</b><span>Ersatz bei Ausfall kurzfristig verfügbar</span></div></li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><div><b>Digitale Disposition</b><span>Planbare Touren und transparente Abläufe</span></div></li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><div><b>Klare Kommunikation</b><span>Ein fester Ansprechpartner für Ihre Aufträge</span></div></li>
     </ul>
-  </div>
-</section>
-
-<section id="auftraggeber">
-  <div class="wrap">
-    <h2 class="reveal">Für unsere Auftraggeber</h2>
-    <p class="intro reveal">Wir arbeiten für Unternehmen, die täglich Sendungen zuverlässig zustellen müssen.</p>
-    <div class="clients reveal">
-      <div class="client"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M3 7l9 4 9-4M12 11v10"/></svg><h3>KEP-Dienstleister</h3><p>Feste Touren als Servicepartner im Depot</p></div>
-      <div class="client"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l3 12h11l2-8H6"/></svg><h3>Online-Händler</h3><p>Same-Day- und Next-Day-Zustellung in der Region</p></div>
-      <div class="client"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12z"/><path d="M9 21v-6h6v6"/></svg><h3>Großhandel</h3><p>Geschäftskunden- und Mengenzustellung</p></div>
-      <div class="client"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-4 0-7 3-7 7 0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg><h3>Regionale Betriebe</h3><p>Kurierfahrten und feste Abholrouten</p></div>
-    </div>
   </div>
 </section>
 
 <div class="cta">
   <div class="wrap">
-    <div><h2>Sie suchen einen verlässlichen Zustellpartner?</h2><p>Wir erstellen Ihnen ein Angebot für Ihre Touren und Zustellgebiete.</p></div>
+    <div><h2>Paket oder Spedition: Wir übernehmen Ihren Auftrag.</h2><p>Schildern Sie uns kurz Ihr Vorhaben. Wir melden uns mit einem Angebot.</p></div>
     <a href="#kontakt" class="btn btn-light">Angebot anfragen</a>
   </div>
 </div>
@@ -291,7 +276,7 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
   <div class="wrap contact">
     <div class="reveal">
       <h2>Kontakt</h2>
-      <p class="intro">Neue Region, zusätzliche Kapazität, ein Transportauftrag oder eine feste Partnerschaft: Schreiben Sie uns. In der Regel melden wir uns innerhalb von 24 Stunden.</p>
+      <p class="intro">Ob Zustelltouren, Expressfahrt oder Ladung: Schreiben Sie uns. In der Regel melden wir uns innerhalb von 24 Stunden.</p>
       <div class="contact-info">
         <div><small>Telefon</small><a href="tel:+4915753461169">0157 53461169</a></div>
         <div><small>E-Mail</small><a href="mailto:kontakt@velorionlogistics.de">kontakt@velorionlogistics.de</a></div>
@@ -304,10 +289,10 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
       <label>E-Mail<input name="email" type="email" required autocomplete="email"></label>
       <label>Telefon<input name="telefon" type="tel" autocomplete="tel"></label>
       <label class="full">Anliegen
-        <select name="anliegen">
-          <option>Partnerschaft oder Auftrag</option>
-          <option>Kapazitätsanfrage</option>
-          <option>Speditionsauftrag</option>
+        <select name="anliegen" id="anliegen">
+          <option>Paketlogistik</option>
+          <option>Spedition</option>
+          <option>Partnerschaft</option>
           <option>Sonstiges</option>
         </select>
       </label>
@@ -323,18 +308,17 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
   <div class="wrap foot">
     <div>
       <a href="#" class="logo"><img src="logo-weiss.svg" alt="Velorion Logistics" width="207" height="46"></a>
-      <p>Servicepartner für Paketzustellung, Last-Mile-Logistik und Spedition. Sitz in Berlin.</p>
+      <p>Logistikpartner für Paketzustellung und Spedition. Sitz in Berlin.</p>
     </div>
     <div><h4>Leistungen</h4><ul>
-      <li><a href="#leistungen">Last-Mile-Zustellung</a></li>
-      <li><a href="#leistungen">KEP- und Expressdienste</a></li>
-      <li><a href="#leistungen">Flexible Kapazitäten</a></li>
-      <li><a href="#leistungen">Spedition</a></li>
+      <li><a href="#paket">Paketlogistik</a></li>
+      <li><a href="#spedition">Spedition</a></li>
+      <li><a href="#kontakt">Angebot anfragen</a></li>
     </ul></div>
     <div><h4>Unternehmen</h4><ul>
       <li><a href="#unternehmen">Über uns</a></li>
-      <li><a href="#auftraggeber">Auftraggeber</a></li>
       <li><a href="#kontakt">Kontakt</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
     </ul></div>
     <div><h4>Kontakt</h4><ul>
       <li>Harry-S.-Truman-Allee 8<br>14167 Berlin</li>
@@ -359,6 +343,10 @@ const io = new IntersectionObserver(entries => entries.forEach(e => {
   if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
 }), {threshold:.12});
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+document.querySelectorAll('[data-anliegen]').forEach(a => a.addEventListener('click', () => {
+  document.getElementById('anliegen').value = a.dataset.anliegen;
+}));
 
 document.getElementById('contact-form').addEventListener('submit', e => {
   e.preventDefault();
