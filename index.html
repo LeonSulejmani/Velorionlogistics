@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Velorion Logistics | Paketzustellung und Last-Mile-Logistik</title>
-<meta name="description" content="Velorion Logistics ist Servicepartner für Paketzustellung auf der letzten Meile. Zuverlässige Touren, feste Ansprechpartner und flexible Kapazitäten für KEP-Dienstleister und Händler.">
-<meta property="og:title" content="Velorion Logistics | Paketzustellung und Last-Mile-Logistik">
-<meta property="og:description" content="Servicepartner für Paketzustellung auf der letzten Meile.">
+<title>Velorion Logistics | Paketzustellung, Last-Mile-Logistik und Spedition</title>
+<meta name="description" content="Velorion Logistics ist Servicepartner für Paketzustellung auf der letzten Meile und Spedition. Zuverlässige Touren, feste Ansprechpartner und flexible Kapazitäten für KEP-Dienstleister, Händler und Geschäftskunden.">
+<meta property="og:title" content="Velorion Logistics | Paketzustellung, Last-Mile-Logistik und Spedition">
+<meta property="og:description" content="Servicepartner für Paketzustellung auf der letzten Meile und Spedition.">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/svg+xml" href="logo-zeichen.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -77,7 +77,8 @@ header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid 
 .value span{color:var(--muted);font-size:15px}
 
 /* Services */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:44px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:44px}
+@media (max-width:1180px){.cards{grid-template-columns:repeat(2,1fr)}}
 .card{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column}
 .card figure{overflow:hidden;background:var(--blue-soft)}
 .card img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;transition:transform .5s ease}
@@ -178,7 +179,7 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
 
 <div class="topbar">
   <div class="wrap">
-    <span>Servicepartner für Paketzustellung in Deutschland</span>
+    <span>Paketzustellung und Spedition in Deutschland</span>
     <nav><a href="tel:+4915753461169">0157 53461169</a><a href="mailto:kontakt@velorionlogistics.de">kontakt@velorionlogistics.de</a></nav>
   </div>
 </div>
@@ -203,7 +204,7 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
   <div class="wrap">
     <div class="hero-box">
       <h1>Ihre Pakete. Unser Versprechen.</h1>
-      <p>Wir übernehmen die Zustellung auf der letzten Meile für KEP-Dienstleister und Händler. Zuverlässig, planbar und mit festen Ansprechpartnern.</p>
+      <p>Wir übernehmen die Zustellung auf der letzten Meile und Speditionsaufträge für KEP-Dienstleister, Händler und Geschäftskunden. Zuverlässig, planbar und mit festen Ansprechpartnern.</p>
       <div class="ctas">
         <a href="#kontakt" class="btn btn-light">Angebot anfragen</a>
         <a href="#leistungen" class="btn btn-ghost">Leistungen ansehen</a>
@@ -223,7 +224,7 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
 <section id="leistungen">
   <div class="wrap">
     <h2 class="reveal">Leistungen</h2>
-    <p class="intro reveal">Von der Übernahme im Depot bis zur Übergabe an der Haustür: Wir stellen Fahrer, Fahrzeuge und Organisation für Ihre Zustelltouren.</p>
+    <p class="intro reveal">Von der Übernahme im Depot bis zur Übergabe an der Haustür: Wir stellen Fahrer, Fahrzeuge und Organisation für Ihre Zustelltouren und Transporte.</p>
     <div class="cards">
       <article class="card reveal">
         <figure><img src="https://images.pexels.com/photos/6721907/pexels-photo-6721907.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Kundin bestätigt die Zustellung auf dem Zustellgerät" width="900" height="563" loading="lazy"></figure>
@@ -236,6 +237,10 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
       <article class="card reveal">
         <figure><img src="https://images.pexels.com/photos/2804929/pexels-photo-2804929.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Logistikzentrum mit Lkw an den Laderampen aus der Luft" width="900" height="563" loading="lazy"></figure>
         <div class="card-body"><h3>Flexible Kapazitäten</h3><p>Zusätzliche Fahrer und Fahrzeuge für Saisonspitzen, Aktionstage und neue Zustellgebiete.</p><a href="#kontakt" class="link">Mehr erfahren <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></a></div>
+      </article>
+      <article class="card reveal">
+        <figure><img src="https://images.pexels.com/photos/41158056/pexels-photo-41158056.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Sattelzug mit Auflieger auf der Straße" width="900" height="563" loading="lazy"></figure>
+        <div class="card-body"><h3>Spedition</h3><p>Planung und Durchführung von Transporten im Nah- und Fernverkehr, als Teil- oder Komplettladung.</p><a href="#kontakt" class="link">Mehr erfahren <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></a></div>
       </article>
     </div>
     <div class="more">
@@ -250,7 +255,7 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
   <div class="wrap company">
     <div class="reveal">
       <h2>Unternehmen</h2>
-      <p>Velorion Logistics ist Servicepartner für die Paketzustellung auf der letzten Meile. Wir verbinden ein eingespieltes Fahrerteam mit digitaler Tourenplanung und einer gepflegten Fahrzeugflotte.</p>
+      <p>Velorion Logistics ist Servicepartner für die Paketzustellung auf der letzten Meile und für Speditionsaufträge. Wir verbinden ein eingespieltes Fahrerteam mit digitaler Tourenplanung und einer gepflegten Fahrzeugflotte.</p>
       <p>Für unsere Auftraggeber bedeutet das planbare Abläufe, transparente Qualität und einen Partner, der auch in Spitzenzeiten verlässlich liefert.</p>
     </div>
     <ul class="checks reveal">
@@ -286,7 +291,7 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
   <div class="wrap contact">
     <div class="reveal">
       <h2>Kontakt</h2>
-      <p class="intro">Neue Region, zusätzliche Kapazität oder feste Partnerschaft: Schreiben Sie uns. In der Regel melden wir uns innerhalb von 24 Stunden.</p>
+      <p class="intro">Neue Region, zusätzliche Kapazität, ein Transportauftrag oder eine feste Partnerschaft: Schreiben Sie uns. In der Regel melden wir uns innerhalb von 24 Stunden.</p>
       <div class="contact-info">
         <div><small>Telefon</small><a href="tel:+4915753461169">0157 53461169</a></div>
         <div><small>E-Mail</small><a href="mailto:kontakt@velorionlogistics.de">kontakt@velorionlogistics.de</a></div>
@@ -302,6 +307,7 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
         <select name="anliegen">
           <option>Partnerschaft oder Auftrag</option>
           <option>Kapazitätsanfrage</option>
+          <option>Speditionsauftrag</option>
           <option>Sonstiges</option>
         </select>
       </label>
@@ -317,12 +323,13 @@ footer{background:var(--navy);color:#b9c4d1;font-size:15px}
   <div class="wrap foot">
     <div>
       <a href="#" class="logo"><img src="logo-weiss.svg" alt="Velorion Logistics" width="207" height="46"></a>
-      <p>Servicepartner für Paketzustellung und Last-Mile-Logistik. Sitz in Berlin.</p>
+      <p>Servicepartner für Paketzustellung, Last-Mile-Logistik und Spedition. Sitz in Berlin.</p>
     </div>
     <div><h4>Leistungen</h4><ul>
       <li><a href="#leistungen">Last-Mile-Zustellung</a></li>
       <li><a href="#leistungen">KEP- und Expressdienste</a></li>
       <li><a href="#leistungen">Flexible Kapazitäten</a></li>
+      <li><a href="#leistungen">Spedition</a></li>
     </ul></div>
     <div><h4>Unternehmen</h4><ul>
       <li><a href="#unternehmen">Über uns</a></li>
